@@ -1,0 +1,38 @@
+{
+  "name": "mcp-pdf-reader",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for reading PDF files with stable pdf-parse implementation",
+  "type": "module",
+  "bin": {
+    "mcp-pdf-reader": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "canvas": "^2.11.2",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/pdf-parse": "^1.1.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "pdf",
+    "reader",
+    "ai",
+    "claude",
+    "typescript"
+  ],
+  "author": "dongchengcheng",
+  "license": "MIT"
+}
